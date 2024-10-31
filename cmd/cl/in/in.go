@@ -59,6 +59,7 @@ func In(cmd *cobra.Command, args []string) error {
 	// FIXME
 	// Issues: https://github.com/golang-design/clipboard/issues/66
 	_ = clipboard.Write(f, cnt)
-	time.Sleep(time.Second)
+	// time.Sleep(time.Second)
+	time.Sleep(500 * time.Millisecond)
 	return nil
 }
